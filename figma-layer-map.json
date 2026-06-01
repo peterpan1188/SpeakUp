@@ -1,0 +1,56 @@
+{
+  "src/components/Hero.tsx": {
+    "hero.visual": "Hero / Visual",
+    "hero.card-1": "Hero / Card 1",
+    "hero.card-2": "Hero / Card 2",
+    "hero.card-3": "Hero / Card 3"
+  },
+  "src/components/WhyWeBuiltThis.tsx": {
+    "why.ai-image-1": "WhyWeBuiltThis / AI Image 1",
+    "why.ai-image-2": "WhyWeBuiltThis / AI Image 2",
+    "why.ai-image-3": "WhyWeBuiltThis / AI Image 3",
+    "why.ai-image-4": "WhyWeBuiltThis / AI Image 4"
+  },
+  "src/components/Navbar.tsx": {
+    "navbar.header": "Navbar / Header",
+    "navbar.banner": "Navbar / Banner",
+    "navbar.row": "Navbar / Nav Row",
+    "navbar.logo": "Navbar / Logo",
+    "navbar.links": "Navbar / Links",
+    "navbar.cta-group": "Navbar / CTA Group",
+    "navbar.cta-popover": "Navbar / CTA Popover",
+    "navbar.mobile-drawer": "Navbar / Mobile Drawer"
+  },
+  "src/components/AppMockups.tsx": {
+    "appmockups.section": "AppMockups / Section",
+    "appmockups.features": "AppMockups / Features Column",
+    "appmockups.phone-container": "AppMockups / Phone Container",
+    "appmockups.phone-frame": "AppMockups / Phone Frame",
+    "appmockups.screen-canvas": "AppMockups / Screen Canvas",
+    "appmockups.floating-note": "AppMockups / Floating Note"
+  },
+  "src/components/ContactFormModal.tsx": {
+    "contact.modal-root": "ContactModal / Root",
+    "contact.backdrop": "ContactModal / Backdrop",
+    "contact.modal": "ContactModal / Panel",
+    "contact.role-banner": "ContactModal / Role Banner",
+    "contact.close-btn": "ContactModal / Close Button",
+    "contact.form": "ContactModal / Form",
+    "contact.success": "ContactModal / Success Panel"
+  },
+  "src/components/Footer.tsx": {
+    "footer.root": "Footer / Root",
+    "footer.columns": "Footer / Columns",
+    "footer.cta": "Footer / CTA"
+  },
+  "src/components/FAQs.tsx": {
+    "faqs.section": "FAQs / Section",
+    "faqs.contact-card": "FAQs / Contact Card",
+    "faq.faq1": "FAQ / Can reports be anonymous?",
+    "faq.faq2": "FAQ / Who receives the reports?",
+    "faq.faq3": "FAQ / How does escalation work?",
+    "faq.faq4": "FAQ / Is the app only for schools?",
+    "faq.faq5": "FAQ / Can parents monitor reports?",
+    "faq.faq6": "FAQ / What happens if no authority responds?"
+  }
+}

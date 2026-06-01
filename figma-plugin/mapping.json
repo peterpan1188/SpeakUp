@@ -1,0 +1,202 @@
+[
+  {
+    "filePath": "src/components/Hero.tsx",
+    "dataLayerName": "hero.visual",
+    "figmaName": "Hero / Visual"
+  },
+  {
+    "filePath": "src/components/Hero.tsx",
+    "dataLayerName": "hero.card-1",
+    "figmaName": "Hero / Card 1"
+  },
+  {
+    "filePath": "src/components/Hero.tsx",
+    "dataLayerName": "hero.card-2",
+    "figmaName": "Hero / Card 2"
+  },
+  {
+    "filePath": "src/components/Hero.tsx",
+    "dataLayerName": "hero.card-3",
+    "figmaName": "Hero / Card 3"
+  },
+  {
+    "filePath": "src/components/WhyWeBuiltThis.tsx",
+    "dataLayerName": "why.ai-image-1",
+    "figmaName": "WhyWeBuiltThis / AI Image 1"
+  },
+  {
+    "filePath": "src/components/WhyWeBuiltThis.tsx",
+    "dataLayerName": "why.ai-image-2",
+    "figmaName": "WhyWeBuiltThis / AI Image 2"
+  },
+  {
+    "filePath": "src/components/WhyWeBuiltThis.tsx",
+    "dataLayerName": "why.ai-image-3",
+    "figmaName": "WhyWeBuiltThis / AI Image 3"
+  },
+  {
+    "filePath": "src/components/WhyWeBuiltThis.tsx",
+    "dataLayerName": "why.ai-image-4",
+    "figmaName": "WhyWeBuiltThis / AI Image 4"
+  },
+  {
+    "filePath": "src/components/Navbar.tsx",
+    "dataLayerName": "navbar.header",
+    "figmaName": "Navbar / Header"
+  },
+  {
+    "filePath": "src/components/Navbar.tsx",
+    "dataLayerName": "navbar.banner",
+    "figmaName": "Navbar / Banner"
+  },
+  {
+    "filePath": "src/components/Navbar.tsx",
+    "dataLayerName": "navbar.row",
+    "figmaName": "Navbar / Nav Row"
+  },
+  {
+    "filePath": "src/components/Navbar.tsx",
+    "dataLayerName": "navbar.logo",
+    "figmaName": "Navbar / Logo"
+  },
+  {
+    "filePath": "src/components/Navbar.tsx",
+    "dataLayerName": "navbar.links",
+    "figmaName": "Navbar / Links"
+  },
+  {
+    "filePath": "src/components/Navbar.tsx",
+    "dataLayerName": "navbar.cta-group",
+    "figmaName": "Navbar / CTA Group"
+  },
+  {
+    "filePath": "src/components/Navbar.tsx",
+    "dataLayerName": "navbar.cta-popover",
+    "figmaName": "Navbar / CTA Popover"
+  },
+  {
+    "filePath": "src/components/Navbar.tsx",
+    "dataLayerName": "navbar.mobile-drawer",
+    "figmaName": "Navbar / Mobile Drawer"
+  },
+  {
+    "filePath": "src/components/AppMockups.tsx",
+    "dataLayerName": "appmockups.section",
+    "figmaName": "AppMockups / Section"
+  },
+  {
+    "filePath": "src/components/AppMockups.tsx",
+    "dataLayerName": "appmockups.features",
+    "figmaName": "AppMockups / Features Column"
+  },
+  {
+    "filePath": "src/components/AppMockups.tsx",
+    "dataLayerName": "appmockups.phone-container",
+    "figmaName": "AppMockups / Phone Container"
+  },
+  {
+    "filePath": "src/components/AppMockups.tsx",
+    "dataLayerName": "appmockups.phone-frame",
+    "figmaName": "AppMockups / Phone Frame"
+  },
+  {
+    "filePath": "src/components/AppMockups.tsx",
+    "dataLayerName": "appmockups.screen-canvas",
+    "figmaName": "AppMockups / Screen Canvas"
+  },
+  {
+    "filePath": "src/components/AppMockups.tsx",
+    "dataLayerName": "appmockups.floating-note",
+    "figmaName": "AppMockups / Floating Note"
+  },
+  {
+    "filePath": "src/components/ContactFormModal.tsx",
+    "dataLayerName": "contact.modal-root",
+    "figmaName": "ContactModal / Root"
+  },
+  {
+    "filePath": "src/components/ContactFormModal.tsx",
+    "dataLayerName": "contact.backdrop",
+    "figmaName": "ContactModal / Backdrop"
+  },
+  {
+    "filePath": "src/components/ContactFormModal.tsx",
+    "dataLayerName": "contact.modal",
+    "figmaName": "ContactModal / Panel"
+  },
+  {
+    "filePath": "src/components/ContactFormModal.tsx",
+    "dataLayerName": "contact.role-banner",
+    "figmaName": "ContactModal / Role Banner"
+  },
+  {
+    "filePath": "src/components/ContactFormModal.tsx",
+    "dataLayerName": "contact.close-btn",
+    "figmaName": "ContactModal / Close Button"
+  },
+  {
+    "filePath": "src/components/ContactFormModal.tsx",
+    "dataLayerName": "contact.form",
+    "figmaName": "ContactModal / Form"
+  },
+  {
+    "filePath": "src/components/ContactFormModal.tsx",
+    "dataLayerName": "contact.success",
+    "figmaName": "ContactModal / Success Panel"
+  },
+  {
+    "filePath": "src/components/Footer.tsx",
+    "dataLayerName": "footer.root",
+    "figmaName": "Footer / Root"
+  },
+  {
+    "filePath": "src/components/Footer.tsx",
+    "dataLayerName": "footer.columns",
+    "figmaName": "Footer / Columns"
+  },
+  {
+    "filePath": "src/components/Footer.tsx",
+    "dataLayerName": "footer.cta",
+    "figmaName": "Footer / CTA"
+  },
+  {
+    "filePath": "src/components/FAQs.tsx",
+    "dataLayerName": "faqs.section",
+    "figmaName": "FAQs / Section"
+  },
+  {
+    "filePath": "src/components/FAQs.tsx",
+    "dataLayerName": "faqs.contact-card",
+    "figmaName": "FAQs / Contact Card"
+  },
+  {
+    "filePath": "src/components/FAQs.tsx",
+    "dataLayerName": "faq.faq1",
+    "figmaName": "FAQ / Can reports be anonymous?"
+  },
+  {
+    "filePath": "src/components/FAQs.tsx",
+    "dataLayerName": "faq.faq2",
+    "figmaName": "FAQ / Who receives the reports?"
+  },
+  {
+    "filePath": "src/components/FAQs.tsx",
+    "dataLayerName": "faq.faq3",
+    "figmaName": "FAQ / How does escalation work?"
+  },
+  {
+    "filePath": "src/components/FAQs.tsx",
+    "dataLayerName": "faq.faq4",
+    "figmaName": "FAQ / Is the app only for schools?"
+  },
+  {
+    "filePath": "src/components/FAQs.tsx",
+    "dataLayerName": "faq.faq5",
+    "figmaName": "FAQ / Can parents monitor reports?"
+  },
+  {
+    "filePath": "src/components/FAQs.tsx",
+    "dataLayerName": "faq.faq6",
+    "figmaName": "FAQ / What happens if no authority responds?"
+  }
+]

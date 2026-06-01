@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SpeakUp — Header Snapshot</title>
+  <style>
+    body{font-family:Inter, system-ui, Arial;margin:0;background:#f5f7fa}
+    .frame{max-width:920px;margin:28px auto;background:#fff;padding:20px;border-radius:8px;border:1px solid #e6edf3}
+    .banner{background:linear-gradient(90deg,#06b6d4,#3b82f6);color:#fff;padding:8px;border-radius:6px;font-weight:800;font-size:12px;display:inline-block}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .logo{font-weight:900;font-size:20px}
+    .links{display:flex;gap:18px}
+    .cta{display:flex;gap:10px}
+    .btn{padding:10px 18px;border-radius:18px;border:1px solid #111;background:#fff;color:#111;font-weight:700}
+    .popover{width:260px;padding:12px;border-radius:12px;border:1px solid #e6edf3;background:#111;color:#fff}
+  </style>
+</head>
+<body>
+  <div class="frame" data-layer-name="header.frame">
+    <div data-layer-name="navbar.banner" class="banner">FOSTERING CLASSROOM WELL-BEING</div>
+    <nav class="nav" data-layer-name="navbar.row">
+      <div class="logo" data-layer-name="navbar.logo">SpeakUp</div>
+      <div class="links" data-layer-name="navbar.links">
+        <div>Why</div>
+        <div>Features</div>
+        <div>Mockups</div>
+        <div>FAQs</div>
+      </div>
+      <div class="cta" data-layer-name="navbar.cta-group">
+        <div data-layer-name="navbar.cta-popover" class="popover">Demo & Pricing</div>
+        <button class="btn" data-layer-name="navbar.cta">Get Started</button>
+      </div>
+    </nav>
+  </div>
+</body>
+</html>

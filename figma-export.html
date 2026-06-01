@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SpeakUp — Figma Export Snapshot</title>
+  <style>
+    :root{--page-width:920px;--accent:#0f172a;--muted:#6b7280}
+    html,body{height:100%;margin:0;font-family:Inter, system-ui, Arial;}
+    .page{max-width:var(--page-width);margin:36px auto;background:#fff;padding:48px;border-radius:8px;border:1px solid #e6edf3}
+    .hero{display:flex;flex-direction:column;gap:28px}
+    .hero-head{display:flex;flex-direction:column;gap:12px}
+    h1{font-size:48px;line-height:1.02;margin:0;color:#0b1220;font-weight:800}
+    p.lead{margin:0;color:var(--muted);font-size:16px;max-width:760px}
+    .cta-row{display:flex;align-items:center;gap:16px}
+    .btn{padding:12px 26px;border-radius:28px;border:1px solid #0b1220;background:white;color:#0b1220;font-weight:700}
+    .outline-btn{padding:12px 26px;border-radius:28px;border:1px solid #e5e7eb;background:#fff;color:#0b1220}
+    /* Inline card simplified for Figma import — avoid absolute positioning */
+    .card{display:flex;align-items:center;gap:14px;border-radius:20px;border:1px solid #e6edf3;padding:18px;max-width:760px;background:#fafafa}
+    .card .emoji{width:44px;height:44px;border-radius:10px;background:#fff;display:flex;align-items:center;justify-content:center;font-size:18px}
+    /* Footer example */
+    .footer{margin-top:40px;padding-top:28px;border-top:1px solid #edf2f7;color:var(--muted);font-size:13px}
+    img.placeholder{width:100%;height:200px;object-fit:cover;border-radius:12px}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header style="margin-bottom:12px">
+      <div style="font-size:11px;font-weight:700;color:#0b1220;letter-spacing:1px">FOSTERING CLASSROOM WELL-BEING</div>
+    </header>
+
+    <main class="hero">
+      <div class="hero-head">
+        <h1>Creating Safer Schools Through Courage</h1>
+        <p class="lead">SpeakUp helps students, parents, teachers, and communities report concerns safely and encourage faster action through a connected support system.</p>
+      </div>
+
+      <div class="cta-row">
+        <button class="btn">Learn More</button>
+        <button class="outline-btn">Talk To Us</button>
+      </div>
+
+      <div class="card" aria-hidden="true">
+        <div class="emoji">🌟</div>
+        <div>
+          <div style="font-weight:800;color:#0b1220">Development Notice</div>
+          <div style="color:var(--muted);font-size:13px;max-width:620px">SpeakUp is currently in development. We are actively open for collaborations, partnerships, and school proposals while building the platform.</div>
+        </div>
+      </div>
+
+      <section style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:760px">
+        <img class="placeholder" src="https://picsum.photos/seed/1/600/400" alt="placeholder" />
+        <img class="placeholder" src="https://picsum.photos/seed/2/600/400" alt="placeholder" />
+        <img class="placeholder" src="https://picsum.photos/seed/3/600/400" alt="placeholder" />
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div>© 2026 SpeakUp Network — Building safer communities for every student.</div>
+    </footer>
+  </div>
+</body>
+</html>

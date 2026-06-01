@@ -1,0 +1,6 @@
+{
+  "name": "SpeakUp",
+  "description": "A startup-style anti-bullying mobile platform designed to help students, schools, parents, and communities foster safety, courage, and fast collaborative action.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
