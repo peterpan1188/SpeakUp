@@ -2,24 +2,33 @@ import React, { useState } from "react";
 import { motion } from "motion/react";
 import { Quote, AlertCircle, Heart, Info, ShieldCheck, HelpCircle, Activity } from "lucide-react";
 
-function AIImagePlaceholder({ label, variant }: { label: string; variant: number }) {
-  const gradients = [
-    "from-sky-200 via-cyan-100 to-white",
-    "from-emerald-200 via-lime-100 to-white",
-    "from-amber-200 via-orange-100 to-white",
-    "from-fuchsia-200 via-pink-100 to-white",
-  ];
-
+function AIImagePlaceholder({ label, variant, src }: { label: string; variant: number; src?: string }) {
   return (
-    <div data-layer-name={`why.ai-image-${variant + 1}`} className={`relative w-full h-full overflow-hidden rounded-3xl bg-linear-to-br ${gradients[variant % gradients.length]} border border-white/60 shadow-inner`}>
-      <div className="absolute inset-0 bg-white/20" />
-      <div className="relative z-10 flex h-full flex-col items-center justify-center gap-3 px-4 text-center">
-        <span className="text-5xl">🤖</span>
-        <div>
-          <p className="text-sm font-bold text-slate-900">{label}</p>
-          <p className="text-[11px] text-slate-600">AI-generated placeholder</p>
-        </div>
-      </div>
+    <div data-layer-name={`why.ai-image-${variant + 1}`} className="relative w-full h-full overflow-hidden rounded-3xl bg-slate-100 border border-slate-200 shadow-lg">
+      {src ? (
+        <>
+          <img
+            src={src}
+            alt={label}
+            referrerPolicy="no-referrer"
+            className="w-full h-full object-cover select-none"
+          />
+          <div className="absolute inset-x-4 bottom-4 rounded-3xl bg-white/90 backdrop-blur-sm px-3 py-2 text-center shadow-sm">
+            <p className="text-sm font-bold text-slate-900">{label}</p>
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="absolute inset-0 bg-white/20" />
+          <div className="relative z-10 flex h-full flex-col items-center justify-center gap-3 px-4 text-center">
+            <span className="text-5xl">🤖</span>
+            <div>
+              <p className="text-sm font-bold text-slate-900">{label}</p>
+              <p className="text-[11px] text-slate-600">AI-generated placeholder</p>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }
@@ -109,7 +118,7 @@ export default function WhyWeBuiltThis() {
                 { title: "Connected Support", desc: "Coordinates parents, teachers, and school coaches" }
               ].map((item, idx) => (
                 <div key={idx} className="flex gap-2.5">
-                  <div className="w-5 h-5 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center flex-shrink-0 mt-0.5 text-xs font-bold">✓</div>
+                  <div className="w-5 h-5 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">✓</div>
                   <div>
                     <h4 className="text-xs font-bold text-slate-800 uppercase tracking-wide">{item.title}</h4>
                     <p className="text-xs text-slate-400">{item.desc}</p>
@@ -121,22 +130,38 @@ export default function WhyWeBuiltThis() {
 
           {/* Graphic Side */}
           <div className="lg:col-span-6">
-            <div className="relative p-2.5 rounded-[36px] bg-sky-50/60 border border-slate-100 shadow-xl overflow-hidden aspect-[4/3]">
+            <div className="relative p-2.5 rounded-[36px] bg-sky-50/60 border border-slate-100 shadow-xl overflow-hidden aspect-4/3">
               <div className="w-full h-full grid grid-cols-4 grid-rows-3 gap-2 rounded-[28px] overflow-hidden">
                 <div className="col-span-2 row-span-3">
-                  <AIImagePlaceholder label="AI Image 1" variant={0} />
+                  <AIImagePlaceholder
+                    label="Student Working at Laptop"
+                    variant={0}
+                    src="/src/assets/images/student_laptop_1779994240612.png"
+                  />
                 </div>
 
                 <div className="col-span-2 row-span-1">
-                  <AIImagePlaceholder label="AI Image 2" variant={1} />
+                  <AIImagePlaceholder
+                    label="Counseling Conversation"
+                    variant={1}
+                    src="/src/assets/images/active_counseling_peers_1779994835970.png"
+                  />
                 </div>
 
                 <div className="col-span-2 row-span-1">
-                  <AIImagePlaceholder label="AI Image 3" variant={2} />
+                  <AIImagePlaceholder
+                    label="Campus Peer Support"
+                    variant={2}
+                    src="/src/assets/images/campus_peers_1779994199375.png"
+                  />
                 </div>
 
                 <div className="col-span-2 row-span-1">
-                  <AIImagePlaceholder label="AI Image 4" variant={3} />
+                  <AIImagePlaceholder
+                    label="School Counseling Team"
+                    variant={3}
+                    src="/src/assets/images/educators_team_1779994220966.png"
+                  />
                 </div>
               </div>
             </div>
@@ -168,7 +193,7 @@ export default function WhyWeBuiltThis() {
         </div>
 
         {/* Interactive Well-being Impact Estimator */}
-        <div className="p-6 md:p-8 rounded-3xl bg-gradient-to-br from-slate-900 to-indigo-950 text-white text-left relative overflow-hidden">
+        <div className="p-6 md:p-8 rounded-3xl bg-linear-to-br from-slate-900 to-indigo-950 text-white text-left relative overflow-hidden">
           <div className="absolute -top-12 -right-12 w-48 h-48 bg-sky-500/10 rounded-full blur-2xl pointer-events-none" />
           <div className="absolute -bottom-12 -left-12 w-48 h-48 bg-rose-500/10 rounded-full blur-2xl pointer-events-none" />
 

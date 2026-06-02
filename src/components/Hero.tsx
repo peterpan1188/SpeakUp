@@ -134,10 +134,7 @@ export default function Hero({ onOpenContact }: HeroProps) {
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover select-none"
               />
-              <div className="absolute top-3 left-3 bg-[#d32f2f] text-white py-1 px-3 rounded-full text-[10px] font-bold uppercase tracking-wide shadow-md">
-                Exclusion Alert Resolved
-              </div>
-            </motion.div>
+              </motion.div>
 
             <motion.div
               initial={{ y: 20, opacity: 0 }}
@@ -152,10 +149,6 @@ export default function Hero({ onOpenContact }: HeroProps) {
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover select-none"
               />
-              <div className="absolute bottom-3 left-3 bg-[#1e88e5] text-white py-1 px-3 rounded-full flex items-center gap-2 shadow-md border border-white/20">
-                <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-                <span className="text-[9px] sm:text-xs font-bold uppercase tracking-wide">Bullying Intercepted</span>
-              </div>
             </motion.div>
 
             <motion.div
