@@ -24,8 +24,8 @@ export default function Hero({ onOpenContact }: HeroProps) {
   };
 
   return (
-    <section className="relative pt-32 pb-24 md:pt-40 md:pb-36 bg-gradient-to-b from-[#f3f7fd] via-[#fafbfc] to-white text-slate-800">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+    <section className="relative pt-32 pb-24 md:pt-40 md:pb-36 bg-linear-to-b from-[#f3f7fd] via-[#fafbfc] to-white text-slate-800">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-stretch">
         {/* Content Side */}
         <motion.div
           variants={containerVariants}
@@ -47,7 +47,7 @@ export default function Hero({ onOpenContact }: HeroProps) {
             variants={itemVariants}
             className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.1]"
           >
-            Creating Safer Schools Through <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-500 via-blue-600 to-indigo-600">Courage</span> and Connection
+            Creating Safer Schools Through <span className="text-transparent bg-clip-text bg-linear-to-r from-sky-500 via-blue-600 to-indigo-600">Courage</span> and Connection
           </motion.h1>
 
           {/* Subheadline */}
@@ -100,10 +100,38 @@ export default function Hero({ onOpenContact }: HeroProps) {
             className="mt-8 sm:mt-10 pt-8 border-t border-slate-100 flex flex-wrap gap-6 items-center"
           >
             <div className="flex -space-x-2">
-              <span className="w-8 h-8 rounded-full bg-indigo-100 border-2 border-white flex items-center justify-center text-xs font-bold text-indigo-700">🎒</span>
-              <span className="w-8 h-8 rounded-full bg-teal-100 border-2 border-white flex items-center justify-center text-xs font-bold text-teal-700">🍎</span>
-              <span className="w-8 h-8 rounded-full bg-rose-100 border-2 border-white flex items-center justify-center text-xs font-bold text-rose-700">🏡</span>
-              <span className="w-8 h-8 rounded-full bg-amber-100 border-2 border-white flex items-center justify-center text-xs font-bold text-amber-700">🏫</span>
+              <div className="w-8 h-8 rounded-full border-2 border-white overflow-hidden shadow-sm">
+                <img
+                  src="https://images.pexels.com/photos/10646612/pexels-photo-10646612.jpeg?auto=compress&cs=tinysrgb&w=200"
+                  alt="Filipino schoolgirls smiling together"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="w-8 h-8 rounded-full border-2 border-white overflow-hidden shadow-sm">
+                <img
+                  src="https://images.pexels.com/photos/10646608/pexels-photo-10646608.jpeg?auto=compress&cs=tinysrgb&w=200"
+                  alt="Students outdoors smiling"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="w-8 h-8 rounded-full border-2 border-white overflow-hidden shadow-sm">
+                <img
+                  src="https://images.pexels.com/photos/10646614/pexels-photo-10646614.jpeg?auto=compress&cs=tinysrgb&w=200"
+                  alt="Students raising hands together"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="w-8 h-8 rounded-full border-2 border-white overflow-hidden shadow-sm">
+                <img
+                  src="https://images.pexels.com/photos/10646602/pexels-photo-10646602.jpeg?auto=compress&cs=tinysrgb&w=200"
+                  alt="Schoolchildren holding hands outdoors"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
             </div>
             <div className="text-xs font-semibold text-slate-500">
               <span className="text-slate-800 font-bold block">1,200+ Educators & Counselors</span>
@@ -118,56 +146,135 @@ export default function Hero({ onOpenContact }: HeroProps) {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="lg:col-span-5 w-full h-[400px] sm:h-[520px] lg:h-[580px] select-none pointer-events-auto mt-8 lg:mt-0 mb-16 lg:mb-0"
+          className="lg:col-span-5 w-full select-none pointer-events-auto mt-8 lg:mt-0 mb-16 lg:mb-0 max-h-162"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 h-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:auto-rows-fr gap-4 h-full">
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              transition={{ duration: 0.6, delay: 0.35 }}
               data-layer-name="hero.card-1"
-              className="relative rounded-[24px] overflow-hidden shadow-2xl border-4 border-white bg-white min-h-[220px]"
+              className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white md:col-span-2 lg:col-span-2 lg:row-span-2"
             >
               <img
-                src="/src/assets/images/combating_exclusion_1779994582862.png"
-                alt="Peers reaching out with warmth to support isolated pupil"
+                src="https://images.pexels.com/photos/10646615/pexels-photo-10646615.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Students in uniform stacking hands for teamwork"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover select-none"
-              />
-              </motion.div>
-
-            <motion.div
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.5 }}
-              data-layer-name="hero.card-2"
-              className="relative rounded-[28px] overflow-hidden shadow-2xl border-4 border-white bg-white min-h-[220px]"
-            >
-              <img
-                src="/src/assets/images/active_counseling_peers_1779994835970.png"
-                alt="Supportive high school peers talking happily with general safety counselor"
-                referrerPolicy="no-referrer"
-                className="w-full h-full object-cover select-none"
+                loading="lazy"
               />
             </motion.div>
 
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-              data-layer-name="hero.card-3"
-              className="relative rounded-[26px] overflow-hidden shadow-2xl border-4 border-white bg-white min-h-[220px] md:col-span-1"
+              transition={{ duration: 0.6, delay: 0.45 }}
+              data-layer-name="hero.card-2"
+              className="relative rounded-[28px] overflow-hidden shadow-2xl border-4 border-white bg-white md:col-span-2 lg:col-span-2"
             >
               <img
-                src="/src/assets/images/group_inclusion_1779994605284.png"
-                alt="Teenagers enjoying real high school friendship and inclusion"
+                src="https://images.pexels.com/photos/10646614/pexels-photo-10646614.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Students raising hands together in school"
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover select-none"
+                loading="lazy"
               />
-              <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm px-3 py-2 rounded-full shadow border border-slate-100/50 flex items-center gap-2">
-                <Heart className="w-4 h-4 text-rose-500 fill-rose-500" />
-                <span className="text-[10px] font-bold text-slate-700">100% Secure Support</span>
-              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.55 }}
+              data-layer-name="hero.card-3"
+              className="relative rounded-[26px] overflow-hidden shadow-2xl border-4 border-white bg-white"
+            >
+              <img
+                src="https://images.pexels.com/photos/10646612/pexels-photo-10646612.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Cheerful schoolgirls standing together in uniform"
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover select-none"
+                loading="lazy"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.65 }}
+              data-layer-name="hero.card-4"
+              className="relative rounded-[26px] overflow-hidden shadow-2xl border-4 border-white bg-white"
+            >
+              <img
+                src="https://images.pexels.com/photos/10646602/pexels-photo-10646602.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Schoolchildren holding hands outdoors"
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover select-none"
+                loading="lazy"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.75 }}
+              data-layer-name="hero.card-5"
+              className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white md:col-span-2 lg:col-span-2"
+            >
+              <img
+                src="https://images.pexels.com/photos/10646599/pexels-photo-10646599.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Students joining hands in school support"
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover select-none"
+                loading="lazy"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.85 }}
+              data-layer-name="hero.card-6"
+              className="relative rounded-[26px] overflow-hidden shadow-2xl border-4 border-white bg-white"
+            >
+              <img
+                src="https://images.pexels.com/photos/10646603/pexels-photo-10646603.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Students leaning together on a school terrace"
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover select-none"
+                loading="lazy"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.95 }}
+              data-layer-name="hero.card-7"
+              className="relative rounded-[26px] overflow-hidden shadow-2xl border-4 border-white bg-white"
+            >
+              <img
+                src="https://images.pexels.com/photos/10646608/pexels-photo-10646608.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="High school students smiling outside campus"
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover select-none"
+                loading="lazy"
+              />
+            </motion.div>
+
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 1.05 }}
+              data-layer-name="hero.card-8"
+              className="relative rounded-[28px] overflow-hidden shadow-2xl border-4 border-white bg-white lg:col-span-2"
+            >
+              <img
+                src="https://images.pexels.com/photos/10646606/pexels-photo-10646606.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Group of students celebrating outdoors"
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover select-none"
+                loading="lazy"
+              />
             </motion.div>
           </div>
         </motion.div>

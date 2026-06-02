@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
 import { Quote, AlertCircle, Heart, Info, ShieldCheck, HelpCircle, Activity } from "lucide-react";
+import activeCounselingPeers from "../assets/images/active_counseling_peers_1779994835970.png";
+import educatorsTeam from "../assets/images/educators_team_1779994220966.png";
+import campusPeers from "../assets/images/campus_peers_1779994199375.png";
+import studentLaptop from "../assets/images/student_laptop_1779994240612.png";
 
-function AIImagePlaceholder({ label, variant, src }: { label: string; variant: number; src?: string }) {
+function AIImagePlaceholder({ label, variant, src, objectPosition }: { label: string; variant: number; src?: string; objectPosition?: string }) {
   return (
     <div data-layer-name={`why.ai-image-${variant + 1}`} className="relative w-full h-full overflow-hidden rounded-3xl bg-slate-100 border border-slate-200 shadow-lg">
       {src ? (
@@ -11,7 +15,7 @@ function AIImagePlaceholder({ label, variant, src }: { label: string; variant: n
             src={src}
             alt={label}
             referrerPolicy="no-referrer"
-            className="w-full h-full object-cover select-none"
+            className={`w-full h-full object-cover select-none ${objectPosition || ""}`}
           />
           <div className="absolute inset-x-4 bottom-4 rounded-3xl bg-white/90 backdrop-blur-sm px-3 py-2 text-center shadow-sm">
             <p className="text-sm font-bold text-slate-900">{label}</p>
@@ -73,7 +77,7 @@ export default function WhyWeBuiltThis() {
   const resolutionSpeedup = "92% Faster";
 
   return (
-    <section id="why-speakup" className="py-20 md:py-28 bg-white overflow-hidden text-slate-800">
+    <section id="why-speakup" className="py-12 md:py-14 bg-white overflow-hidden text-slate-800">
       <div className="max-w-7xl mx-auto px-6">
         
         {/* Section Header */}
@@ -134,33 +138,34 @@ export default function WhyWeBuiltThis() {
               <div className="w-full h-full grid grid-cols-4 grid-rows-3 gap-2 rounded-[28px] overflow-hidden">
                 <div className="col-span-2 row-span-3">
                   <AIImagePlaceholder
-                    label="Student Working at Laptop"
+                    label="Students celebrating inclusion"
                     variant={0}
-                    src="/src/assets/images/student_laptop_1779994240612.png"
+                    src={activeCounselingPeers}
+                    objectPosition="object-[20%_50%]"
                   />
                 </div>
 
                 <div className="col-span-2 row-span-1">
                   <AIImagePlaceholder
-                    label="Counseling Conversation"
+                    label="Educators and team support"
                     variant={1}
-                    src="/src/assets/images/active_counseling_peers_1779994835970.png"
+                    src={educatorsTeam}
                   />
                 </div>
 
                 <div className="col-span-2 row-span-1">
                   <AIImagePlaceholder
-                    label="Campus Peer Support"
+                    label="Campus peers collaborating"
                     variant={2}
-                    src="/src/assets/images/campus_peers_1779994199375.png"
+                    src={campusPeers}
                   />
                 </div>
 
                 <div className="col-span-2 row-span-1">
                   <AIImagePlaceholder
-                    label="School Counseling Team"
+                    label="Student using learning device"
                     variant={3}
-                    src="/src/assets/images/educators_team_1779994220966.png"
+                    src={studentLaptop}
                   />
                 </div>
               </div>
